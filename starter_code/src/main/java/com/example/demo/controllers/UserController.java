@@ -67,10 +67,6 @@ public class UserController {
 			cartRepository.save(cart);
 			user.setCart(cart);
 			userRepository.save(user);
-			logger.debug("Here is some DEBUG");
-			logger.info("Here is some INFO");
-			logger.warn("Here is some WARN");
-			logger.error("Here is some ERROR");
 			return ResponseEntity.ok(user);
 		}
 		catch (Exception e){
